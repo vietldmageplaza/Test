@@ -18,10 +18,10 @@ jobs:
       - name: SSH Remote Commands
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.HOST }}
+          host: ${{ secrets.UAT_HOST }}
           username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          password: ${{ secrets.UAT_PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /var/www/dev.southland.com.au/current/
+            cd /var/www/uat.southland.com.au/current/
             php bin/magento c:c
