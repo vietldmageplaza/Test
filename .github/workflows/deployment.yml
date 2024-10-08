@@ -23,5 +23,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /home/1181630.cloudwaysapps.com/htpfrbvjta/public_html
+            cd /var/www/dev.southland.com.au/current/
             php bin/magento c:c
